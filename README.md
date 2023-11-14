@@ -1,1 +1,1 @@
-This is a Discord Clone project using Next Js, React Js, Shadcn, Prisma, Socket.io, and Tailwind.
+This is a Discord Clone project using Next Js, React Js, Shadcn, Clerk, Prisma, Socket.io, and Tailwind.
