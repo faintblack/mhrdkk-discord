@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { MemberRole } from "@prisma/client";
 import {
   ChevronDown,
@@ -24,7 +25,7 @@ interface ServerHeaderProps {
   role?: MemberRole;
 }
 
-export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
+const ServerHeader = ({ server, role }: ServerHeaderProps) => {
   const isAdmin = role === MemberRole.ADMIN;
   const isModerator = isAdmin || role === MemberRole.MODERATOR;
 
@@ -78,3 +79,5 @@ export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
     </DropdownMenu>
   );
 };
+
+export default React.memo(ServerHeader);
